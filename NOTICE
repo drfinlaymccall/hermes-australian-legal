@@ -1,0 +1,20 @@
+Hermes Australian Legal
+Copyright 2026 Finlay McCall
+
+Workflow design adapted from Finlay McCall's australian-deal-review,
+https://github.com/drfinlaymccall/australian-deal-review
+Source revision: ba8e255f59c869a14de0353926724b912506046d
+Licensed under Apache-2.0.
+
+The Git reader is a new native adapter informed by the public
+Australian regulations corpus contract, not a copy of private legal files.
+The corpus is maintained separately at
+https://github.com/drfinlaymccall/australia-regulations
+Its tools are Apache-2.0; its derived legislation is CC BY 4.0.
+No corpus legislation text is bundled here. Runtime users must retain its
+Federal Register attribution and verify the authoritative Register.
+
+Related global-law fork: https://github.com/drfinlaymccall/global-law
+Original upstream: https://github.com/lexifina/global-law (CC0 umbrella;
+individual country corpora have their own terms).
+No upstream global-law code is included in this plugin.

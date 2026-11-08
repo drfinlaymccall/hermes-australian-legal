@@ -1,0 +1,13 @@
+name: hermes-australian-legal
+version: "0.1.0"
+description: "Read dated Australian regulatory provisions, retain source caveats, and prepare counsel-led deal reviews with explicit gates and scenario arithmetic. Not legal advice."
+author: "Finlay McCall"
+license: Apache-2.0
+requires_hermes: ">=0.22.5"
+provides_tools:
+  - au_legal_status
+  - au_legal_provision
+  - au_legal_review_gate
+  - au_legal_earnout
+  - au_legal_check_finding
+provides_hooks: []
