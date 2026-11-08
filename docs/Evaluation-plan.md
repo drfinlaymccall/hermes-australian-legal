@@ -2,6 +2,8 @@
 
 **Status: proposed protocol, not executed results.** No behavioural scores, host-readiness claim or claim of legal accuracy is made here. The intended use is preparation for counsel, not legal or tax advice. Passing this protocol would support only the tested workflow and versions, not general legal reliability.
 
+The later author decision in [Release scope](Release-scope.md) permits an experimental public prototype submission before this full evaluation is complete. The gates below remain mandatory for any production or legal-reliability claim; none is represented as passed by publication alone.
+
 ## Evidence and scope
 
 The design draws on the upstream plugin's README, evals README and the `earnout-review` and `australian-deal-law` skills at Apache-2.0 revision `ba8e255f59c869a14de0353926724b912506046d`. Its five evaluation boundaries are retained below. Claude's evaluation command and reported costs are not Hermes execution evidence.

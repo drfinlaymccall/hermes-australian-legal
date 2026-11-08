@@ -1,5 +1,7 @@
 # Hackathon preparation — not submitted
 
+The author now permits public prototype release and marketplace submission under [Release scope](Release-scope.md). This document remains the hackathon-form/demo checklist. A marketplace PR does not mean the hackathon form or video is complete.
+
 ## Verified organiser instructions
 
 The [Nous Research announcement](https://x.com/NousResearch/status/2118094256438936062) states:

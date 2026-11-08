@@ -4,6 +4,8 @@
 
 Read a provision as recorded on a date, retain its caveats, and prepare questions for counsel. This is **not legal or tax advice**. It is not a complete Australian legal research service and cannot certify privilege, legal applicability, or source authenticity.
 
+**Experimental public prototype for synthetic evaluation.** The 42-test software suite, historical smoke and one real Hermes tool dispatch passed. The paired behavioural benchmark and qualified legal review are still pending. Do not use this prototype for confidential transactions, legal advice or production reliance. See [Release scope](docs/Release-scope.md).
+
 ## What works in this prototype
 
 - Five native tools: corpus coverage, dated provision lookup, review prerequisites, exact-decimal scenario calculation, and literal quote checks.
@@ -47,11 +49,11 @@ The clone command downloads public source; it is a deliberate operator setup ste
 After reviewing the source and a pinned release, use the supported Git installer:
 
 ```sh
-hermes -p default plugins install https://github.com/drfinlaymccall/hermes-australian-legal --ref FULL_REVIEWED_40_CHARACTER_SHA --no-enable
+hermes -p default plugins install https://github.com/drfinlaymccall/hermes-australian-legal --no-enable
 hermes -p default plugins enable hermes-australian-legal
 ```
 
-Replace the placeholder with the reviewed commit; it is deliberately not a runnable SHA. The repository remains private during development. Access and a later publication decision are separate from installation. Restart a CLI session to discover the plugin. Restart a gateway only at an agreed time. Do not enable it across every profile.
+This installs from the public source repository, not an accepted marketplace listing. To reproduce a reviewed revision, add `--ref` followed by its full 40-character commit SHA. Restart a CLI session to discover the plugin. Restart a gateway only at an agreed time. Do not enable it across every profile.
 
 For a local development checkout, a directory symlink under the selected profile's `plugins/` plus `hermes plugins enable` is sufficient. Plugin Doctor tests a local path in isolation without installing into a live profile.
 
@@ -73,4 +75,4 @@ In a fresh session, run `/au-legal`, load `hermes-australian-legal:counsel-prepa
 
 See [Evaluation plan](docs/Evaluation-plan.md) for the separate software, host, corpus, LLM behaviour and qualified-review gates. Only executed tests belong in [Verification](docs/Verification.md). A passing unit suite is not legal validation.
 
-[Hackathon preparation](docs/Hackathon.md) contains the verified entry steps, a demo outline and release holds. Public visibility, catalog PR, video post and submission form require Finlay's final approval. No entry has been submitted.
+[Hackathon preparation](docs/Hackathon.md) contains the entry steps and demo outline. Finlay authorised public prototype release and marketplace submission on 8 November 2026. Catalog acceptance remains with the maintainers. A marketplace PR is separate from a demo post or hackathon form; neither is implied by this release. Production and legal-reliability gates remain open.
