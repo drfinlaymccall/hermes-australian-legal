@@ -2,6 +2,12 @@
 
 Executed on 8 November 2026. This is a software standup receipt, not a legal-accuracy evaluation or a completed behavioural benchmark.
 
+## Public prototype release follow-up
+
+Independent read-only release review found no unresolved privacy or executable-code blocker for a public experimental prototype. Both findings were addressed: the rendered README/entry explicitly disclose synthetic-only prototype scope and unrun behavioural/legal review, and the quote checker now rejects non-string or oversized source text. A new regression first failed on the original list-membership behaviour, then passed after the guard.
+
+The updated complete suite passed **43 tests**, along with the synthetic demo, Plugin Doctor, catalog validation and real historical smoke. `hermes plugins validate . --install-deps` also passed. The retained scanner caution now points to the host-model disclosure at README line 64. The older 42-test results below describe the initial standup, not a second or larger behavioural evaluation. The earlier real host/model smoke was not repeated for the source-type guard.
+
 ## Reproducible local gates
 
 Command:

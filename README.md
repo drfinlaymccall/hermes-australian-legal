@@ -4,7 +4,7 @@
 
 Read a provision as recorded on a date, retain its caveats, and prepare questions for counsel. This is **not legal or tax advice**. It is not a complete Australian legal research service and cannot certify privilege, legal applicability, or source authenticity.
 
-**Experimental public prototype for synthetic evaluation.** The 42-test software suite, historical smoke and one real Hermes tool dispatch passed. The paired behavioural benchmark and qualified legal review are still pending. Do not use this prototype for confidential transactions, legal advice or production reliance. See [Release scope](docs/Release-scope.md).
+**Experimental public prototype for synthetic evaluation.** The 43-test software suite, historical smoke and one real Hermes tool dispatch passed. The paired behavioural benchmark and qualified legal review are still pending. Do not use this prototype for confidential transactions, legal advice or production reliance. See [Release scope](docs/Release-scope.md).
 
 ## What works in this prototype
 

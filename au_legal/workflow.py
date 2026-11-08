@@ -71,7 +71,10 @@ def check_finding(*, clause_text, clause_quote, source, source_quote, date):
     datetime.date.fromisoformat(date)
     if not isinstance(source,dict) or source.get("date")!=date:
         raise ValueError("Source and requested dates must match.")
-    if clause_quote not in clause_text or source_quote not in source.get("text",""):
+    source_text=source.get("text")
+    if not isinstance(source_text,str) or not source_text.strip() or len(source_text)>300000:
+        raise ValueError("Source text must be nonempty bounded text.")
+    if clause_quote not in clause_text or source_quote not in source_text:
         raise ValueError("A quote does not occur literally in the supplied text.")
     if not all(isinstance(source.get(k),str) and re.fullmatch(r"(?:[0-9a-f]{40}|[0-9a-f]{64})",source[k])
                for k in ("corpus_commit","compilation_commit")):

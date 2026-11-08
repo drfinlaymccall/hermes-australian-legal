@@ -67,6 +67,13 @@ class WorkflowTests(unittest.TestCase):
         self.assertEqual(out['status'],'quote_match_only')
         self.assertFalse(out['source_authenticity_verified'])
 
+    def test_source_text_must_be_string(self):
+        source={'text':['synthetic words'],'date':'2026-01-01','caveats':[],
+                'corpus_commit':'a'*40,'compilation_commit':'b'*40}
+        with self.assertRaises(ValueError):
+            check_finding(clause_text='A',clause_quote='A',source=source,
+                          source_quote='synthetic words',date='2026-01-01')
+
     def test_hallucinated_quote_blocked(self):
         with self.assertRaises(ValueError):
             check_finding(clause_text='A',clause_quote='B',source={},source_quote='x',date='2026-01-01')

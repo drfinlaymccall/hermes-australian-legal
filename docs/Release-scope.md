@@ -10,7 +10,8 @@ The original design, evaluation and hackathon documents record a conservative fu
 
 - The implemented tools are date/metadata-bounded Git retrieval, caller-attested review readiness, a hypothetical decimal formula and literal quote checking.
 - The existing 42-test suite, Plugin Doctor, catalog validation, historical-source smoke and one actual host/model tool dispatch support narrow software claims.
-- Code remains the same as the initial tested prototype unless a later explicit change is recorded. This release updates public instructions and disclosure only.
+- Independent release review found no privacy or executable-code blocker for a public prototype. It requested explicit rendered prototype disclosures and identified a source-text type validation defect.
+- This release adds a source-text string/size guard to the quote checker. A new regression first reproduced the defect, then passed with the correction. The final software suite has 43 tests. No legal semantics or permissions were broadened.
 - The 16-case paired behavioural benchmark, holdouts, qualified legal review and production-readiness decision remain pending.
 - The separate source corpus ends at 2026-09-01. A later source check date is not later legal coverage. This plugin cannot establish current law or legal applicability.
 
